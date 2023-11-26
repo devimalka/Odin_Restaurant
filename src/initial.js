@@ -1,5 +1,6 @@
+const contentDiv = document.createElement('div');
+
 function init(){
-    let contentDiv = document.createElement('div');
     contentDiv.id = 'content';
 
     let heading = document.createElement('h1');
@@ -22,3 +23,4 @@ function init(){
 
 
 export default init;
+export { contentDiv };
