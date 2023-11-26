@@ -1,0 +1,10 @@
+#navdiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navdiv div{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+}
