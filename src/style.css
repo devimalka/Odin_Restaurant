@@ -1,10 +1,20 @@
-#navdiv{
-    display: flex;
-    justify-content: space-evenly;
+#container{
 }
 
-#navdiv div{
-    flex-direction: column;
-    flex-wrap: nowrap;
+#mheader{
+    display: block;
+    border: 1px solid green;
+
+}
+
+#navbardiv{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-evenly;
+
+}
+
+#navbardiv div{
     flex-basis: auto;
+    border:  1px solid black;
 }

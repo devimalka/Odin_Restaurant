@@ -1,7 +1,7 @@
-function clearPage() {
-  let div = document.getElementById("maindiv");
-  div.innerHTML = "";
+// clear the current view
+function clearPage(){
+  let div = document.getElementById('navbardiv');
+  div.innerHTML = '';
 }
-
 
 export default clearPage;

@@ -1,15 +1,12 @@
-import clearPage from "./tabsLoad";
+function contactsTab(){
+  let tab = document.createElement('div');
+  tab.id = 'contactab';
 
-function contactLoad() {
-  clearPage();
-  let div = document.createElement("div");
-  div.id = "contactTab";
+  let header = document.createElement('h2');
+  header.innerHTML = 'Contact Us';
 
-  let h1 = document.createElement("h1");
-  h1.innerHTML = "hi this is contacts";
-
-  div.appendChild(h1);
-  return div;
+  tab.appendChild(header);
+  return tab;
 }
 
-export default contactLoad;
+export default contactsTab;

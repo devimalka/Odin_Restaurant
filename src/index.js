@@ -1,16 +1,17 @@
-import contactLoad from "./contacts";
-import { contentDiv } from "./initial";
-import init from "./initial";
-import menuLoad from "./menu";
-import createNav from "./navbar";
+import contactsTab from "./contacts";
+import { createContainer, getContainer, mainHeader } from "./initial";
+import MenuTab from "./menu";
+import { navBar } from "./navbar";
+import clearPage from "./tabsLoad";
+import './style.css';
 
-import "./style.css";
+// appending container div to the body
+document.body.appendChild(createContainer());
 
-contentDiv.appendChild(createNav());
-contentDiv.appendChild(init());
+let container = getContainer();
+container.appendChild(mainHeader());
+let mheader = document.getElementById('mheader');
+mheader.appendChild(navBar());
 
-document.body.appendChild(contentDiv);
 
-
-let cnttab = document.getElementById('contacts').addEventListener('click',contactLoad);
-let mnutab = document.getElementById('Menu').addEventListener('click',menuLoad);
+let menuclick = document.getElementById('menuTab').addEventListener('click',clearPage);

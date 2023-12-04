@@ -1,15 +1,25 @@
-import clearPage from "./tabsLoad";
+function MenuTab(){
+  let tab = document.createElement('div');
+  tab.id = 'menuTab';
 
-function menuLoad() {
-  clearPage();
-  let div = document.createElement("div");
-  div.id = "contactTab";
+  let tabheader = document.createElement('h2');
+  tabheader.innerHTML = 'Our Menu';
 
-  let h1 = document.createElement("h1");
-  h1.innerHTML = "hi this is contacts";
-
-  div.appendChild(h1);
-  return div;
+  tab.appendChild(tabheader);
+  tab.appendChild(createMenuItems(10));
+  return tab;
 }
 
-export default menuLoad;
+// create menu items
+function createMenuItems(n){
+  let list = document.createElement('ul')
+  for(let i = 0 ; i<n; i++){
+    let item = document.createElement('li');
+    item.innerHTML = "Item " + i;
+    list.appendChild(item);
+  }
+
+  return list;
+}
+
+export default MenuTab;

@@ -1,23 +1,14 @@
-function createNav() {
-  let navdiv = document.createElement("div");
-  navdiv.id = "navdiv";
+import contactsTab from "./contacts";
+import MenuTab from "./menu";
 
-  navdiv.appendChild(createTab("contacts"));
-  navdiv.appendChild(createTab("Menu"));
+// navigation bar div
+function navBar(){
+  let navBarDiv = document.createElement('div');
+  navBarDiv.id = 'navbardiv';
 
-  return navdiv;
+  navBarDiv.appendChild(MenuTab());
+  navBarDiv.appendChild(contactsTab());
+  return navBarDiv;
 }
 
-function createTab(tabname) {
-  let tab = document.createElement("div");
-  tab.id = tabname;
-
-  let header = document.createElement("h2");
-  header.innerHTML = tabname;
-
-  tab.appendChild(header);
-
-  return tab;
-}
-
-export default createNav;
+export {navBar};
