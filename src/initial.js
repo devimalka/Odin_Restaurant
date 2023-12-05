@@ -20,4 +20,11 @@ function mainHeader(){
   return mHeader;
 }
 
-export {createContainer, getContainer, mainHeader};
+
+function contentDiv(){
+  let div = document.createElement('div');
+  div.id = 'content';
+  return div;
+}
+
+export {createContainer, getContainer, mainHeader, contentDiv};

@@ -1,3 +1,5 @@
+import clearPage from "./tabsLoad";
+
 function MenuTab(){
   let tab = document.createElement('div');
   tab.id = 'menuTab';
@@ -6,8 +8,16 @@ function MenuTab(){
   tabheader.innerHTML = 'Our Menu';
 
   tab.appendChild(tabheader);
-  tab.appendChild(createMenuItems(10));
+  tab.addEventListener('click',loadapp);
   return tab;
+}
+
+
+
+function loadapp(items){
+  clearPage();
+  let tab  = document.getElementById('content');
+  tab.appendChild(createMenuItems(10));
 }
 
 // create menu items

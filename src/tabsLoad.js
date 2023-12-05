@@ -1,6 +1,6 @@
 // clear the current view
 function clearPage(){
-  let div = document.getElementById('navbardiv');
+  let div = document.getElementById('content');
   div.innerHTML = '';
 }
 
