@@ -5,7 +5,7 @@ function loadMainPage(){
 
     let div = document.createElement('div');
     let image = document.createElement('img');
-    image.src = "src\close-up-cooking-dinner-46239.jpg";
+    image.src = "../src/close-up-cooking-dinner-46239.jpg";
     div.appendChild(image);
 
     let para = document.createElement('p');

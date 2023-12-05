@@ -5,10 +5,15 @@ module.exports = {
     mode: 'development',
     devtool: 'inline-source-map',
     entry: './src/index.js',
-    plugins: [new htmlWebpackPlugin()],
+    plugins: [new htmlWebpackPlugin(
+        {
+            title: 'index'
+        }
+    )],
     output: {
-        filename: 'test.js',
+        filename: 'main.js',
         path: path.resolve(__dirname,'dist'),
+        clean: true,
     },
     module: {
         rules: [
