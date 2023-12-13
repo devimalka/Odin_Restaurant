@@ -1,1 +1,4 @@
-console.log('hello world');
+import initialPageLoad from "./initial";
+import './style.css';
+
+initialPageLoad();
